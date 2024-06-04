@@ -34,7 +34,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val longitude = intent.getDoubleExtra("longitude", 0.0)
 
         val location = LatLng(latitude, longitude)
-        mMap.addMarker(MarkerOptions().position(location).title("Sight Location"))
+        mMap.addMarker(MarkerOptions().position(location).title("景點位置"))
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 15f))
     }
 
